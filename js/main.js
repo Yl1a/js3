@@ -1,8 +1,29 @@
-document.getElementById('next').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').appendChild(lists[0]);
+/* 
+document.querySelectorAll('.btn').forEach((el) => {
+    
+        el.addEventListener('mousedown', () =>{
+
+            let content = el.nextElementSibling;
+            console.log(content);
+
+        if(content.style.maxHeight){
+            document.querySelectorAll('.answer').forEach(el => el.style.maxHeight = null)
+        }else{
+            document.querySelectorAll('.answer').forEach(el => el.style.maxHeight = null)
+            content.style.maxHeight = content.scrollHeight + 'px'
+        }
+    })
+    
+}) */
+
+const accrordion = document.getElementsByClassName('accord');
+for (i = 0; i < accrordion.length; i++){
+    accrordion[i].addEventListener('click', function(){
+        this.classList.toggle('active');   
+    })
 }
-document.getElementById('prev').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').prepend(lists[lists.length-1]);
-}
+console.log('heloo')
+
+
+
+
