@@ -16,6 +16,12 @@ body {
     color: #1e1e1e;
 }
 
+.link {
+    color: #ffff;
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .container {
     max-width: 1380px;
     margin: 0 auto;
